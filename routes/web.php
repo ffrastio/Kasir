@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Apps\DashboardController;
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return Inertia::render('Auth/Login');
+});
+
+Route::prefix('apps')->group(function () {
+    // Route group
+    Route::group(['middleware' => ['auth']], function () {
+        // Route dashboard 
+        Route::get('dashboard', DashboardController::class)->name('apps.dashboard');
+    });
 });

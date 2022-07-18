@@ -22,7 +22,6 @@
 </body>
 
 </html>
-Di atas, kita memanggil CSS dan JavaScript dari template yang sudah kita tambahkan sebelumnya.
 
 <link href="{{ asset('/admin/css/style.css') }}" rel="stylesheet" />
 <script src="{{ asset('/admin/js/coreui.bundle.min.js') }}" defer></script>
