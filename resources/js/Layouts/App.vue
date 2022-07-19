@@ -10,14 +10,14 @@
         >
             <div
                 class="c-sidebar-brand d-lg-down-none"
-                style="background: #82C91E"
+                style="background: #82c91e"
             >
                 <img
                     src="/images/logo.png"
                     class="bg-light rounded shadow-sm p-1"
-                    width="35"
+                    width="150"
                 />
-                <span class="ml-2 font-weight-bold">APLIKASI KASIR</span>
+                <!-- <span class="ml-2 font-weight-bold">APLIKASI KASIR</span> -->
             </div>
 
             <!-- sidebar -->

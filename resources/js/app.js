@@ -1,17 +1,18 @@
 import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/inertia-vue3";
+
 import { InertiaProgress } from "@inertiajs/progress";
 
 createInertiaApp({
     resolve: (name) => require(`./Pages/${name}`),
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
-            // set mixin
+            //set mixins
             .mixin({
                 methods: {
-                    // methods : "hasAnyPermission"
+                    //method "hasAnyPermission"
                     hasAnyPermission: function (permissions) {
-                        // get permissions from props
+                        //get permissions from props
                         let allPermissions = this.$page.props.auth.permissions;
 
                         let hasPermission = false;

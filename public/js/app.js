@@ -20398,15 +20398,13 @@ var _hoisted_1 = {
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "c-sidebar-brand d-lg-down-none",
   style: {
-    "background": "#82C91E"
+    "background": "#82c91e"
   }
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   src: "/images/logo.png",
   "class": "bg-light rounded shadow-sm p-1",
-  width: "35"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "ml-2 font-weight-bold"
-}, "APLIKASI KASIR")], -1
+  width: "150"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span class=\"ml-2 font-weight-bold\">APLIKASI KASIR</span> ")], -1
 /* HOISTED */
 );
 
