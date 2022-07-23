@@ -22,7 +22,12 @@ Route::get('/', function () {
 Route::prefix('apps')->group(function () {
     // Route group
     Route::group(['middleware' => ['auth']], function () {
+
         // Route dashboard 
         Route::get('dashboard', DashboardController::class)->name('apps.dashboard');
+
+        //route permissions
+        Route::get('/permissions', \App\Http\Controllers\Apps\PermissionController::class)->name('apps.permissions.index')
+            ->middleware('permission:permissions.index');
     });
 });

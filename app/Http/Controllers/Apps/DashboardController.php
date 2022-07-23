@@ -56,7 +56,7 @@ class DashboardController extends Controller
         $sum_profits_today = Profit::whereDay('created_at', $day)->sum('total');
 
         //get product limit stock
-        $products_limit_stock = Product::with('category')->where('stock', '<=', 10)->get();
+        $products_limit_stock = Product::with('category')->where('stock', '<=', 5)->get();
 
         //chart best selling product
         $chart_best_products = DB::table('transaction_details')
